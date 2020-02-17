@@ -13,5 +13,6 @@ filename=incre-${backupnr}.tar.gz
 
 set -- ${BACKUP_DIR}/backup-??.tar.gz
 
+
 #command
 tar -czpf $BACKUP_DIR/$filename -g $BACKUP_DIR/$TIMESTAMP $SOURCE
