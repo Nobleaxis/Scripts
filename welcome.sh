@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# ======This scripts was written by Noble. A linux/AWS system engineer.This script is ============
-# ======to welcome a new team member on board.It is an interact section with the author.=========
+# ======This script was written by Noble. A Linux/AWS system engineer. This script is ============
+# ======to welcome a new team member on board. It is an interactive section with the author.=========
 # ======              Sit back and enjoy                    =======
 clear
 
 echo -e "\e[1;31m For this script to work correctly, I have to install 'pv' command on your system \e[0m"
-echo "Dont worry, you will be given a chance to remove it from your system if you dont want it to persist"
+echo "Dont worry, you will be given a chance to remove it from your system if you dont want it to persist."
 
-echo "Do you want noble to install pv? This will take less than 60 seconds"
+echo "Do you want Noble to install pv? This will take less than 60 seconds."
 
 	read INPUT
 
@@ -19,17 +19,17 @@ echo "Do you want noble to install pv? This will take less than 60 seconds"
 sudo yum install -y epel-release > pvfile && sudo yum install -y pv > pv.log
 
 	else
-echo "Sorry I can't continue without the package. Thank you. Have a nice day"
+echo "Sorry I can't continue without the package. Thank you. Have a nice day."
 exit
 
 		fi
    clear
-		echo -e "\e[1;31m Hey you are welcome to Dellatech Global LLC. My name is Noble the senior Linux System Admin. Can I know your name please \e[0m" | pv -qL 7
+		echo -e "\e[1;31m Hey you are welcome to Dellatech Global LLC. My name is Noble, and I am the senior Linux System Admin. Can I know your name please \e[0m" | pv -qL 7
 echo
 read NAME
 
 echo
-   	 echo -e "\e[1;31m Welcome to the team $NAME. Lets get to know ourselves more. I come from Ghana, what's your country of origin. \e[0m" | pv -qL 7
+   	 echo -e "\e[1;31m Welcome to the team $NAME. Let's get to know ourselves more. I come from Ghana. What's your country of origin? \e[0m" | pv -qL 7
 	echo
 read COUNTRY
 	echo
@@ -38,7 +38,7 @@ sleep 1
 then 
       echo -e "\e[1;31m Oh wow that great. Akwaaba \e[0m" | pv -qL 7
 	else
-echo -e "\e[1;31m Wow $COUNTRY is such a nice country. Its actually on my list to go for a vacation over there \e[0m" | pv -qL 7
+echo -e "\e[1;31m Wow $COUNTRY is such a nice country. It's actually on my list to go for a vacation over there \e[0m" | pv -qL 7
 
 fi
 
